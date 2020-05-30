@@ -1,0 +1,50 @@
+
+/*VARIABLES*/
+
+$clrtitres: rgb(253,203,70); /*couleur texte header et footer*/
+$clrbck: rgb(87,156,135); /*couleur background header et footer*/
+
+
+/*HEADER*/
+
+header
+{
+
+    text-align: center;
+    vertical-align: middle;
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+    color: $clrtitres;
+    background-color: $clrbck;
+    height: 10.25vw;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+
+    a{
+        color: $clrtitres;
+
+
+        h1{
+            font-size: 7em;
+            font-weight: bold;
+
+        }
+    }
+}
+
+/*Menus*/
+.menus
+{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 84vw;
+margin: 4.17vw 6.7vw 5.86vw 6.7vw;
+}
+
+.menus_1_et_2, .menus_3_et_4 {
+display: flex;
+height: 48.1%;
+flex-direction: row;
+justify-content: space-between;
+}
+
