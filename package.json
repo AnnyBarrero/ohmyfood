@@ -2,7 +2,7 @@
   "name": "projet-3",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "sass": "sass --watch ./sass/style.scss:./css/style.css"
   },

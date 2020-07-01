@@ -1,50 +1,404 @@
+@import "_header_footer";
 
-/*VARIABLES*/
+/*variables colors menu*/
+$note_color:rgb(252,223,219);
+$chic_color:rgb(255, 245, 254);
+$delice_color: rgb(242, 239, 239);
+$lapalette_color:rgb(248, 248, 248);
 
-$clrtitres: rgb(253,203,70); /*couleur texte header et footer*/
-$clrbck: rgb(87,156,135); /*couleur background header et footer*/
-
-
-/*HEADER*/
-
-header
-{
-
-    text-align: center;
-    vertical-align: middle;
-    font-family:'Montserrat', sans-serif;
-    font-weight: bold;
-    color: $clrtitres;
-    background-color: $clrbck;
-    height: 10.25vw;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
-
-    a{
-        color: $clrtitres;
-
-
-        h1{
-            font-size: 7em;
-            font-weight: bold;
-
-        }
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
 }
 
-/*Menus*/
-.menus
+
+
+/*tous les menus: menus-prev*/
+.container
 {
 display: flex;
 flex-direction: column;
-justify-content: space-between;
-height: 84vw;
-margin: 4.17vw 6.7vw 5.86vw 6.7vw;
+justify-content: center;
+margin: auto 0;
+text-align: center;
+} 
+
+/*proprietes pour les 4 menus*/
+%menu
+{
+    flex-direction: column;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+    
+}    
+
+
+/*Proprietes pour le menu la note*/
+.menu_1{
+    @extend %menu;
+    background-color: $note_color;
+    h2{
+        font-family: "debonshire", cursive;
+        font-size: 2em;
+        color:rgb(63, 55, 55);
+        font-weight: bold;
+    }
+    p{
+        font-family: 'Itim', cursive;
+        color:rgb(63, 55, 55);
+        font-size: 3em;
+     
+    } 
+}
+.menu_2{
+    @extend %menu;
+    background-color: $chic_color;
+    h2{
+        font-family: 'Kurale', serif;
+        font-size: 2em;
+        background: #e38a12; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #e38a12 0%, #a768bc 51%, #b38cfa 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  #e38a12 0%,#a768bc 51%,#b38cfa 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  #e38a12 0%,#a768bc 51%,#b38cfa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e38a12', endColorstr='#b38cfa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip:text;
+        margin-top: 15%;
+    }
+    p{  
+        font-family: 'DM Serif Text', serif;
+        font-size: 3em;
+        color: rgb(199,116,18); 
+    }
+}
+.menu_3{
+    @extend %menu;
+    background-color: $delice_color;
+    h2{
+        font-size: 2em;
+        font-family: 'Dancing Script', cursive;
+        background: -moz-linear-gradient(left,  #00b7ea 0%, #0060c1 100%);
+        background: -webkit-linear-gradient(left,  #00b7ea 0%,#0060c1 100%);
+        background: linear-gradient(to right,  #00b7ea 0%,#0060c1 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#0060c1',GradientType=1 );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        margin-top: 15%;
+    }
+    p{
+        font-size: 3em;
+        font-family: 'Nanum Pen Script', cursive;
+        font-style: italic;
+        color: rgb(8,135,251);
+    }
+}
+.menu_4{
+    @extend %menu;
+    background-color: rgb(253, 253, 253);
+    h2{
+        font-size: 2em;
+        font-family: 'Kaushan Script', cursive;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#43973d+0,beff7f+100 */
+        background: #43973d; /* Old browsers */
+        background: -moz-linear-gradient(left,  #43973d 0%, #beff7f 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  #43973d 0%,#beff7f 100%); /*  Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  #43973d 0%,#beff7f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43973d', endColorstr='#beff7f',GradientType=1 ); /* IE6-9 */
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip:text;
+        margin-top: 15%;
+    }
+    p{
+        font-size: 3em;
+        font-family: 'Nanum Pen Script', cursive;
+        color: rgb(114,191,86);
+    }
+}
+/*PROCHAINEMENT*/
+
+.prochainement
+{
+    display: flex;
+    justify-content: center;
+    height: 4.93%;
+    width:43.5%;
+    margin: 6px auto 110px auto;
+    padding: 15px;
+    background-color: rgb(87, 156, 135);
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    h3{
+
+        font-size: 2em;
+        font-family:'Montserrat', sans-serif;
+        font-weight: bold;
+        color: rgb(253, 203, 70);
+    }
+}
+/* ANIMATION DES POINTS*/
+
+.points
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 1%;
+    .point{
+        margin: 0.7vw;
+        width: 1.2vw;
+        height: 1.2vw;
+        border-radius: 50%;
+        background: rgb(253, 203, 70);
+        &:nth-child(1){
+            animation:pulse 3s linear infinite;   
+        }
+        &:nth-child(2){
+            animation:pulse 3s linear infinite 200ms;   
+        }
+        &:nth-child(3){
+            animation:pulse 3s linear infinite 400ms;   
+        }
+    }
+}
+@keyframes pulse {
+    from, 
+    40% {
+        opacity: 0; 
+    }
+    50%
+    {
+        opacity: 0.5;
+    }
+    80%,
+    to {
+        opacity: 1;
+    }
 }
 
-.menus_1_et_2, .menus_3_et_4 {
-display: flex;
-height: 48.1%;
-flex-direction: row;
-justify-content: space-between;
+/*SECTION NOM DU MENU// presentation chaque menu (entrees, plats, dessert*/
+
+
+.nomdumenu
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    h2{
+        font-family: 'Caveat', cursive;
+        font-size: 3em;
+    }
+    
+}
+.menu_chic {
+h2{
+    font-family: 'Kurale', serif;
+    font-size: 2em;
+    background: #e38a12; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #e38a12 0%, #a768bc 51%, #b38cfa 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #e38a12 0%,#a768bc 51%,#b38cfa 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #e38a12 0%,#a768bc 51%,#b38cfa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e38a12', endColorstr='#b38cfa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+    }
+    .color_entree{
+        color: rgb(198,116,18);
+    }
+    .color_plat{
+        color: rgb(165,103,153);  
+    }
+    .color_dessert{
+        color: rgb(110,76,204);  
+    }
 }
 
+.menu_papilles h2{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    background: -moz-linear-gradient(left,  #00b7ea 0%, #0060c1 100%);
+    background: -webkit-linear-gradient(left,  #00b7ea 0%,#0060c1 100%);
+    background: linear-gradient(to right,  #00b7ea 0%,#0060c1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#0060c1',GradientType=1 );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.menu_lapalette h2{
+    font-size: 2em;
+    font-family: 'Kaushan Script', cursive;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#43973d+0,beff7f+100 */
+        background: #43973d; /* Old browsers */
+        background: -moz-linear-gradient(left,  #43973d 0%, #beff7f 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  #43973d 0%,#beff7f 100%); /*  Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  #43973d 0%,#beff7f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43973d', endColorstr='#beff7f',GradientType=1 ); /* IE6-9 */
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip:text;
+    margin-bottom: 15px;
+
+}
+/*Section entree*/
+
+.titre_entree
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 1.5em;
+    margin: 50px 25px;
+}
+.titre_plat h3{
+    background: linear-gradient(to top, rgb(75, 33, 56) 0%, rgb(75, 33, 56) 0.2vw, transparent 0.2vw) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 300ms;
+    &:hover{
+        background-size: 100% 100%;  
+    }
+    font-size: 1em;
+    font-weight: lighter;
+}
+/*STYLE DES MENUS*/
+%stylemenu{
+    margin: 30px 142px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+    font-family: "Caveat", cursive;
+    font-size: 1em;
+  /*  img{
+        height: 38px;
+    } */
+}
+
+.lignemenu
+{
+    font-size: 1.5em;
+    margin: 5px 70px;
+    li
+    {
+    justify-content: space-between;
+    display: flex;
+    margin-right: 20px;
+    margin-top: 30px;
+    }
+    li .menu__nom{
+        font-weight: lighter;
+    }
+}
+.menu_note_enchantee
+{   
+    @extend %stylemenu;
+    background-color: $note_color;
+
+    .titre_plat{
+        margin: 7% 4%;
+    @extend .titre_entree
+        }
+    
+}
+.menu_chic{
+    @extend %stylemenu;
+    background-color: $chic_color;
+    .titre_plat{
+        margin: 7% 4%;
+        @extend .titre_entree
+    }
+}
+.menu_papilles{
+    @extend %stylemenu;
+    background-color: $delice_color;
+    .titre_plat{
+    @extend .titre_entree
+    }
+
+}
+.menu_lapalette{
+    @extend %stylemenu;
+    background-color: $lapalette_color;
+    .titre_plat{
+        @extend .titre_entree
+    }
+}
+/* STYLE DES MENUS */
+
+.nomdumenubas
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 95px;
+}
+
+h6
+{
+    font-size: 1.5em;
+}
+
+
+/*ANIMATIONS DES TEXTES*/
+.fa-music{background: linear-gradient(to left, #f8a183, #f15861);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 52px;
+        height: 52px;
+        font-size: 50px;
+        }
+
+%transitionmenu
+{
+    transition: transform 300ms cubic-bezier(.48,.01,.63,1.02);
+    opacity: 1; 
+    transform: scale(1.3);
+    opacity: 0.7;
+}
+.menu
+{
+    
+    &:hover .fa-music {
+        @extend %transitionmenu;   
+    }
+    &:hover h2{
+        @extend %transitionmenu;
+    }
+    &:hover p{
+        @extend %transitionmenu;
+    }
+    
+}
+
+    /* Responsive */
+@media screen and (min-width: 1400px){
+
+    .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: row;
+    }
+    .container .menu_1{
+        align-items: center;
+    }
+    .container article{
+    display: flex;
+    height: 550px;
+    width: 400px;
+    margin: 25px;
+    justify-content: center;
+    }
+    
+    }
+    

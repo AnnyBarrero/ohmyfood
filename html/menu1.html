@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/style.css">
+        <script src="https://kit.fontawesome.com/1ba3acfa04.js" crossorigin="anonymous"></script>
+        <!--Font la note echantee titre-->
+        <link href="https://fonts.googleapis.com/css2?family=Devonshire&display=swap" rel="stylesheet"> 
+       <!--Font la note echantee texte-->
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
         <title>La note enchantée</title>
     </head>
     <body>
@@ -11,34 +16,28 @@
         <header>
             <a href="/index.html"><h1>ohmyfood</h1></a>
         </header>
-        <!--Ici commence le menu la note-->
+        <!--Ici commence le menu la note, creer des listes ul,li-->
         <section class="menu_note_enchantee">
             <div class="nomdumenu">
-                <img src="/images/notemusique.png" alt="logo note de musique">
+                <i class="fas fa-music icon"></i>
                 <h2>La note enchantée</h2>
             </div>
-            <div class="entrees">
-                <div class="titre_entree">
+            <div class="plats">
+                <div class="titre_plat">
                     <img src="/images/note_barre_gauche.png" alt="logo barre à gauche du titre entrees">
                     <h3>Prélude</h3>
                    <img src="/images/note_barre_droite.png" alt="logo barre à droite du titre entrees">
                 </div>
-                <div class="lignemenu">
-                    <p>Ravioles de foie gras accompagnés de leur crème à la truffe</p>
-                    <em>98€</em>
-                </div>
-                <div class="lignemenu">
-                    <p>Caviar osciètre sur blini à la farine de blé noir</p>
-                    <em>115€</em>
-                </div>
-                <div class="lignemenu">
-                    <p>Homard et espuma de potiron mariné aux zestes d'orange</p>
-                    <em>89€</em>
-                </div>
-                <div class="lignemenu">
-                    <p>Fois gras de canard cuit entier, confiture de figue et pain toasté</p>
-                    <em>105€</em>
-                </div>
+                <ul class="lignemenu">
+                    <li><p class="menu__nom">Ravioles de foie gras accompagnés de leur crème à la truffe</p>
+                    <p class="menu__prix">98€</p></li>
+                    <li><p class="menu__nom">Caviar osciètre sur blini à la farine de blé noir</p>
+                    <p class="menu__prix">115€</p></li>
+                    <li><p class="menu__nom"> Homard et espuma de potiron mariné aux zestes d'orange </p>
+                    <p class="menu__prix"> 89€</p></li>
+                    <li><p class="menu__nom">Fois gras de canard cuit entier, confiture de figue et pain toasté</p>
+                    <p class="menu__prix">105€</p></li>
+                </ul>
             </div>
             <div class="plats">
                 <div class="titre_plat">
@@ -46,49 +45,37 @@
                     <h3>Point d'orgue</h3>
                     <img src="/images/note_barre_droite.png" alt="logo barre à droite du titre plats">
                 </div>
-                <div class="lignemenu">
-                    <p>Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave</p>
-                    <em>102€</em>
-                </div>
-                <div class="lignemenu">
-                    <p>Langoustine poêlée, purée de patate douce</p>
-                    <em>205€</em>
-                </div>
-                <div class="lignemenu">
-                    <p>Mijoté de queue de boeuf et riz sauvage aux zests de citron</p>
-                    <em>169€</em>
-                </div>
+                <ul class="lignemenu">
+                    <li><p class="menu__nom">Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave </p>
+                    <p class="menu__prix">102€ </p></li>
+                    <li><p class="menu__nom">Langoustine poêlée, purée de patate douce </p>
+                    <p class="menu__prix">205€</p></li>
+                    <li><p class="menu__nom">Mijoté de queue de boeuf et riz sauvage aux zests de citron </p>
+                    <p class="menu__prix">169€</p></li>
+                </ul>
             </div>
-            <div class="desserts">
-                <div class="titre_dessert">
+            <div class="plats">
+                <div class="titre_plat">
                     <img src="/images/note_barre_gauche.png" alt="logo barre à gauche du titre dessert">
                     <h3>Mouvement final</h3>
                     <img src="/images/note_barre_droite.png" alt="logo barre à droite du titre dessert">
                 </div>
-                <div class="lignemenu">
-                    <p>Macaron noisette et chocolat, glace au caramel brun et sel de Guérande</p>
-                </div>
-                <div class="lignemenu">
-                    <p>Baba au rhum revisité avec son coulis de citron</p>
-                </div>
-                <div class="lignemenu">
-                    <p>Tarte au citron meringuée destructurée</p>
-                </div>
+                <ul class="lignemenu">
+                <li><p class="menu__nom">Macaron noisette et chocolat, glace au caramel brun et sel de Guérande</p></li>
+                <li><p class="menu__nom">Baba au rhum revisité avec son coulis de citron</p></li>
+                <li><p class="menu__nom">Tarte au citron meringuée destructurée</p></li>
+                </ul>
             </div>
             <div class="nomdumenubas">
-                <img src="/images/notemusique.png" alt="logo note de musique">
+                <i class="fas fa-music icon"></i>
                 <h6>La note enchantée</h6>
             </div>
         </section>    
         <!--Pied de page-->
         <footer>
-            <section id="textesfooter">
-                <div class="mentionslegales">
-                    <a href="terms-of-use.html"><h4>Mentions légales</h4></a>
-                </div>
-                <div class="contactez-nous">
-                    <a href="mailto:anny_barrero@hotmail.com"><h4>Contactez-nous</h4></a>
-                </div>
+            <section class="text_footer">
+                <a href="terms-of-use.html"><h4 class="mentions_wiggle">Mentions légales</h4></a>
+                <a href="mailto:anny_barrero@hotmail.com"><h4 class="contact_wiggle">Contactez-nous</h4></a>
             </section>
         </footer>
     </body>

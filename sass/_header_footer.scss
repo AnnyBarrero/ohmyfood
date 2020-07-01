@@ -1,0 +1,79 @@
+/*VARIABLES*/
+
+$clrtitres: rgb(253,203,70); /*couleur texte header et footer*/
+$clrbck: rgb(87,156,135); /*couleur background header et footer*/
+
+
+/*HEADER*/
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    font-family:'Montserrat', sans-serif;
+    color: $clrtitres;
+    background-color: $clrbck;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    
+    a{
+        color: $clrtitres;
+        text-decoration: none;
+
+        h1{
+            font-size: 4em;
+        }
+    }
+}
+/*FOOTER*/
+
+footer
+{
+    margin-top: -5%;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    position: fixed;
+}
+
+.text_footer
+{
+    display: flex;
+    justify-content: space-between;
+    font-family:'Montserrat', sans-serif;
+    background-color: $clrbck;
+    padding: 2%;
+
+
+    a{ 
+    color: $clrtitres;
+        
+    }
+    /*&:hover h4{
+         Start the shake animation and make the animation last for 0.5 seconds 
+    animation: wiggle 0.5s infinite;
+    }*/
+    h4{
+        display: inline-block;
+        font-size: 17px;
+        font-weight: bold;
+
+        &:hover{ 
+       animation: wiggle 0.5s infinite;
+       }
+    }
+}
+
+@keyframes wiggle {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
