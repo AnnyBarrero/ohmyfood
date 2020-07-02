@@ -204,6 +204,8 @@ ul {
           flex-direction: column;
   -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
           box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+  padding: 45px;
+  margin: 25px;
 }
 
 /*Proprietes pour le menu la note*/
@@ -213,7 +215,7 @@ ul {
 
 .menu_1 h2 {
   font-family: "debonshire", cursive;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #3f3737;
   font-weight: bold;
 }
@@ -221,7 +223,7 @@ ul {
 .menu_1 p {
   font-family: 'Itim', cursive;
   color: #3f3737;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .menu_2 {
@@ -308,10 +310,9 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 4.93%;
-  width: 43.5%;
-  margin: 6px auto 110px auto;
-  padding: 15px;
+  width: 90%;
+  margin: 23px auto 68px auto;
+  padding: 10px;
   background-color: #579c87;
   border-radius: 30px;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -319,7 +320,7 @@ ul {
 }
 
 .prochainement h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: #fdcb46;
@@ -605,7 +606,7 @@ h6 {
 }
 
 /* Responsive */
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1000px) {
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -635,6 +636,28 @@ h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .prochainement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 4.93%;
+    width: 43.5%;
+    margin: 6px auto 110px auto;
+    padding: 15px;
+    background-color: #579c87;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  .prochainement h3 {
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #fdcb46;
   }
 }
 /*# sourceMappingURL=style.css.map */
