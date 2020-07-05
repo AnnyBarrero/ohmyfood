@@ -224,7 +224,7 @@ h2{
 .menu_papilles h2{
     margin-top: 20px;
     margin-bottom: 50px;
-    font-size: 2em;
+    font-size: 1.7em;
     font-family: 'Dancing Script', cursive;
     background: -moz-linear-gradient(left,  #00b7ea 0%, #0060c1 100%);
     background: -webkit-linear-gradient(left,  #00b7ea 0%,#0060c1 100%);
@@ -266,8 +266,7 @@ h2{
     &:hover{
         background-size: 100% 100%;  
     }
-    font-size: 1em;
-    font-weight: lighter;
+    font-size: 0.9em;
 }
 /*STYLE DES MENUS*/
 %stylemenu{
@@ -286,8 +285,8 @@ h2{
 
 .lignemenu
 {
-    font-size: 1.5em;
-    margin: 5px 70px;
+    font-size: 1.2em;
+    margin: 1px 10px;
     li
     {
     justify-content: space-between;
@@ -298,6 +297,9 @@ h2{
     li .menu__nom{
         font-weight: lighter;
     }
+    li .menu__prix{
+        font-weight: bolder;
+    }
 }
 .menu_note_enchantee
 {   
@@ -305,7 +307,6 @@ h2{
     background-color: $note_color;
 
     .titre_plat{
-        margin: 7% 4%;
     @extend .titre_entree
         }
     
@@ -314,7 +315,6 @@ h2{
     @extend %stylemenu;
     background-color: $chic_color;
     .titre_plat{
-        margin: 7% 4%;
         @extend .titre_entree
     }
 }
@@ -339,7 +339,8 @@ h2{
 {
     display: flex;
     justify-content: center;
-    margin-bottom: 95px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 h6
@@ -404,10 +405,8 @@ h6
 {
     display: flex;
     justify-content: center;
-    height: 4.93%;
     width:43.5%;
     margin: 6px auto 110px auto;
-    padding: 15px;
     background-color: rgb(87, 156, 135);
     border-radius: 30px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
@@ -422,6 +421,13 @@ h6
     }
 
     /*STYLE DES MENUS*/
+
+    .lignemenu{
+    font-size: 1.5em;
+    margin: 5px 70px;
+    }
+
+
 %stylemenuresponsive{
     margin: 30px auto 100px;
     width: 100%;
@@ -430,10 +436,16 @@ h6
 
 .menu_note_enchantee{
 @extend %stylemenuresponsive;
+   padding-bottom: 30px;
+img{
+    width: 30%;
+    height: 10%;
+    }
 }
 
 .menu_chic{
     @extend %stylemenuresponsive;
+    padding-bottom: 80px;
     img{
     width: 30%;
     height: 10%;
@@ -441,6 +453,7 @@ h6
 }
 .menu_papilles{
     @extend %stylemenuresponsive;
+    padding-bottom: 80px;
     img{
         width: 30%;
         height: 10%;
@@ -449,6 +462,7 @@ h6
 }
 .menu_lapalette{
     @extend %stylemenuresponsive;
+    padding-bottom: 80px;
     img{
         width: 30%;
         height: 10%;

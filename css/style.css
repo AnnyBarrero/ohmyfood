@@ -303,7 +303,7 @@ ul {
 .menu_papilles h2 {
   margin-top: 20px;
   margin-bottom: 50px;
-  font-size: 2em;
+  font-size: 1.7em;
   font-family: "Dancing Script", cursive;
   background: -moz-linear-gradient(left, #00b7ea 0%, #0060c1 100%);
   background: -webkit-linear-gradient(left, #00b7ea 0%, #0060c1 100%);
@@ -346,8 +346,7 @@ ul {
   background: linear-gradient(to top, #4b2138 0%, #4b2138 0.2vw, transparent 0.2vw) no-repeat;
   background-size: 0 100%;
   transition: background-size 300ms;
-  font-size: 1em;
-  font-weight: lighter;
+  font-size: 0.9em;
 }
 .titre_plat h3:hover {
   background-size: 100% 100%;
@@ -369,8 +368,8 @@ ul {
 }
 
 .lignemenu {
-  font-size: 1.5em;
-  margin: 5px 70px;
+  font-size: 1.2em;
+  margin: 1px 10px;
 }
 .lignemenu li {
   justify-content: space-between;
@@ -381,21 +380,16 @@ ul {
 .lignemenu li .menu__nom {
   font-weight: lighter;
 }
+.lignemenu li .menu__prix {
+  font-weight: bolder;
+}
 
 .menu_note_enchantee {
   background-color: #fcdfdb;
 }
-.menu_note_enchantee .titre_plat {
-  margin: 7% 4%;
-}
-
 .menu_chic {
   background-color: #fff5fe;
 }
-.menu_chic .titre_plat {
-  margin: 7% 4%;
-}
-
 .menu_papilles {
   background-color: #f2efef;
 }
@@ -406,7 +400,8 @@ ul {
 .nomdumenubas {
   display: flex;
   justify-content: center;
-  margin-bottom: 95px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 h6 {
@@ -455,10 +450,8 @@ h6 {
   .prochainement {
     display: flex;
     justify-content: center;
-    height: 4.93%;
     width: 43.5%;
     margin: 6px auto 110px auto;
-    padding: 15px;
     background-color: #579c87;
     border-radius: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -471,22 +464,44 @@ h6 {
   }
 }
 /*STYLE DES MENUS*/
+.lignemenu {
+  font-size: 1.5em;
+  margin: 5px 70px;
+}
+
 .menu_lapalette, .menu_papilles, .menu_chic, .menu_note_enchantee {
   margin: 30px auto 100px;
   width: 100%;
   max-width: 800px;
 }
 
+.menu_note_enchantee {
+  padding-bottom: 30px;
+}
+.menu_note_enchantee img {
+  width: 30%;
+  height: 10%;
+}
+
+.menu_chic {
+  padding-bottom: 80px;
+}
 .menu_chic img {
   width: 30%;
   height: 10%;
 }
 
+.menu_papilles {
+  padding-bottom: 80px;
+}
 .menu_papilles img {
   width: 30%;
   height: 10%;
 }
 
+.menu_lapalette {
+  padding-bottom: 80px;
+}
 .menu_lapalette img {
   width: 30%;
   height: 10%;
