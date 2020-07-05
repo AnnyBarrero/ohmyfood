@@ -383,7 +383,6 @@ h6
 @media screen and (min-width: 1000px){
 
     .container{
-    display: flex;
     flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
@@ -421,3 +420,37 @@ h6
     }
 }
     }
+
+    /*STYLE DES MENUS*/
+%stylemenuresponsive{
+    margin: 30px auto 100px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.menu_note_enchantee{
+@extend %stylemenuresponsive;
+}
+
+.menu_chic{
+    @extend %stylemenuresponsive;
+    img{
+    width: 30%;
+    height: 10%;
+    }
+}
+.menu_papilles{
+    @extend %stylemenuresponsive;
+    img{
+        width: 30%;
+        height: 10%;
+        }
+
+}
+.menu_lapalette{
+    @extend %stylemenuresponsive;
+    img{
+        width: 30%;
+        height: 10%;
+        }
+}

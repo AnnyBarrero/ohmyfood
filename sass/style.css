@@ -608,9 +608,6 @@ h6 {
 /* Responsive */
 @media screen and (min-width: 1000px) {
   .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
@@ -659,5 +656,27 @@ h6 {
     font-weight: bold;
     color: #fdcb46;
   }
+}
+
+/*STYLE DES MENUS*/
+.menu_note_enchantee, .menu_chic, .menu_papilles, .menu_lapalette {
+  margin: 30px auto 100px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.menu_chic img {
+  width: 30%;
+  height: 10%;
+}
+
+.menu_papilles img {
+  width: 30%;
+  height: 10%;
+}
+
+.menu_lapalette img {
+  width: 30%;
+  height: 10%;
 }
 /*# sourceMappingURL=style.css.map */
