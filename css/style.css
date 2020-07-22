@@ -17,7 +17,7 @@ header a {
   text-decoration: none;
 }
 header a h1 {
-  font-size: 4em;
+  font-size: 3.5em;
 }
 
 /*FOOTER*/
@@ -87,6 +87,11 @@ footer {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+@media screen and (min-width: 1000px) {
+  header h1 {
+    font-size: 4em;
+  }
+}
 /*variables colors menu*/
 * {
   margin: 0;
@@ -109,6 +114,15 @@ ul {
   justify-content: center;
   margin: auto 0;
   text-align: center;
+}
+
+.container_menu {
+  padding: 70px 40px;
+  margin: 30px auto 100px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+  font-family: "Caveat", cursive;
 }
 
 /*proprietes pour les 4 menus*/
@@ -267,11 +281,11 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 70px;
 }
 .nomdumenu h2 {
   font-family: "Caveat", cursive;
   font-size: 3em;
+  text-align: center;
 }
 
 .menu_chic h2 {
@@ -338,39 +352,10 @@ ul {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  font-size: 1.5em;
-  margin: 50px 25px;
-}
-
-.titre_plat h3 {
-  background: linear-gradient(to top, #4b2138 0%, #4b2138 0.2vw, transparent 0.2vw) no-repeat;
-  background-size: 0 100%;
-  transition: background-size 300ms;
-  font-size: 0.9em;
-}
-.titre_plat h3:hover {
-  background-size: 100% 100%;
+  margin: 50px 0;
 }
 
 /*STYLE DES MENUS*/
-.menu_lapalette, .menu_papilles, .menu_chic, .menu_note_enchantee {
-  margin: 30px 142px;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
-  font-family: "Caveat", cursive;
-  font-size: 1em;
-  /*  img{
-        height: 38px;
-    } */
-}
-
-.lignemenu {
-  font-size: 1.2em;
-  margin: 1px 10px;
-}
 .lignemenu li {
   justify-content: space-between;
   display: flex;
@@ -378,10 +363,12 @@ ul {
   margin-top: 30px;
 }
 .lignemenu li .menu__nom {
+  font-size: 1em;
   font-weight: lighter;
 }
 .lignemenu li .menu__prix {
   font-weight: bolder;
+  font-size: 0.7em;
 }
 
 .menu_note_enchantee {
@@ -396,7 +383,6 @@ ul {
 .menu_lapalette {
   background-color: #f8f8f8;
 }
-/* STYLE DES MENUS */
 .nomdumenubas {
   display: flex;
   justify-content: center;
@@ -408,7 +394,7 @@ h6 {
   font-size: 1.5em;
 }
 
-/*ANIMATIONS DES TEXTES*/
+/*ANIMATIONS DES TEXTES ET ANIMATION TIREE TITRE PLATS*/
 .fa-music {
   background: linear-gradient(to left, #f8a183, #f15861);
   -webkit-background-clip: text;
@@ -423,6 +409,86 @@ h6 {
   opacity: 1;
   transform: scale(1.3);
   opacity: 0.7;
+}
+
+.line_lanote {
+  background: linear-gradient(to top, #3f3737 0%, #3f3737 0.2vw, transparent 0.2vw) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 300ms;
+  font-size: 1.6em;
+}
+.line_lanote:hover {
+  background-size: 100% 100%;
+}
+
+.line_lechic_1 {
+  background: linear-gradient(to top, #c77412 0%, #c77412 0.2vw, transparent 0.2vw) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 300ms;
+  font-size: 0.9em;
+}
+.line_lechic_1:hover {
+  background-size: 100% 100%;
+}
+
+.line_lechic_2 {
+  background: linear-gradient(to top, #a56799 0%, #a56799 0.2vw, transparent 0.2vw) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 300ms;
+  font-size: 0.9em;
+}
+.line_lechic_2:hover {
+  background-size: 100% 100%;
+}
+
+.line_lechic_3 {
+  background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 0.2vw, transparent 0.2vw) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 300ms;
+  font-size: 0.9em;
+}
+.line_lechic_3:hover {
+  background-size: 100% 100%;
+}
+
+.line_papilles_1 {
+  background: linear-gradient(to top, #0328db 0%, #0328db 0.2vw, transparent 0.2vw) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 300ms;
+  font-size: 0.9em;
+}
+.line_papilles_1:hover {
+  background-size: 100% 100%;
+}
+
+.line_papilles_2 {
+  background: linear-gradient(to top, #0371f0 0%, #0371f0 0.2vw, transparent 0.2vw) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 300ms;
+  font-size: 0.9em;
+}
+.line_papilles_2:hover {
+  background-size: 100% 100%;
+}
+
+.line_papilles_3 {
+  background: linear-gradient(to top, #299bf2 0%, #299bf2 0.2vw, transparent 0.2vw) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 300ms;
+  font-size: 0.9em;
+}
+.line_papilles_3:hover {
+  background-size: 100% 100%;
+}
+
+.line_lapalette {
+  background: linear-gradient(to top, #53a745 0%, #53a745 0.2vw, transparent 0.2vw) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 300ms;
+  font-size: 0.9em;
+}
+.line_lapalette:hover {
+  background-size: 100% 100%;
 }
 
 /* Responsive */
@@ -447,6 +513,10 @@ h6 {
     justify-content: center;
   }
 
+  .titre_plat h3 {
+    font-size: 1.3em;
+  }
+
   .prochainement {
     display: flex;
     justify-content: center;
@@ -466,44 +536,11 @@ h6 {
 /*STYLE DES MENUS*/
 .lignemenu {
   font-size: 1.5em;
-  margin: 5px 70px;
+  margin: 1px 10px;
 }
 
-.menu_lapalette, .menu_papilles, .menu_chic, .menu_note_enchantee {
-  margin: 30px auto 100px;
-  width: 100%;
-  max-width: 800px;
-}
-
-.menu_note_enchantee {
-  padding-bottom: 30px;
-}
-.menu_note_enchantee img {
-  width: 30%;
-  height: 10%;
-}
-
-.menu_chic {
-  padding-bottom: 80px;
-}
-.menu_chic img {
-  width: 30%;
-  height: 10%;
-}
-
-.menu_papilles {
-  padding-bottom: 80px;
-}
-.menu_papilles img {
-  width: 30%;
-  height: 10%;
-}
-
-.menu_lapalette {
-  padding-bottom: 80px;
-}
-.menu_lapalette img {
-  width: 30%;
+.menu_lapalette img, .menu_papilles img, .menu_chic img, .menu_note_enchantee img {
+  width: 28%;
   height: 10%;
 }
 

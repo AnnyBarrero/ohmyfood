@@ -24,13 +24,21 @@ ul{
 /*tous les menus: menus-prev*/
 .container
 {
-display: flex;
-flex-direction: column;
-justify-content: center;
-margin: auto 0;
-text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0;
+    text-align: center;
+    
 } 
-
+.container_menu{
+    padding: 70px 40px;
+    margin: 30px auto 100px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+    font-family: "Caveat", cursive;
+}
 /*proprietes pour les 4 menus*/
 %menu
 {
@@ -191,16 +199,16 @@ text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 70px;
     h2{
         font-family: 'Caveat', cursive;
         font-size: 3em;
+        text-align: center;
     }
     
 }
 .menu_chic {
-h2{
-    font-family: 'Kurale', serif;
+    h2{
+        font-family: 'Kurale', serif;
     font-size: 2em;
     background: #e38a12; /* Old browsers */
     background: -moz-linear-gradient(-45deg,  #e38a12 0%, #a768bc 51%, #b38cfa 100%); /* FF3.6-15 */
@@ -256,37 +264,15 @@ h2{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    font-size: 1.5em;
-    margin: 50px 25px;
+     margin: 50px 0;
 }
-.titre_plat h3{
-    background: linear-gradient(to top, rgb(75, 33, 56) 0%, rgb(75, 33, 56) 0.2vw, transparent 0.2vw) no-repeat;
-    background-size: 0 100%;
-    transition: background-size 300ms;
-    &:hover{
-        background-size: 100% 100%;  
-    }
-    font-size: 0.9em;
-}
+
+
 /*STYLE DES MENUS*/
-%stylemenu{
-    margin: 30px 142px;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
-    font-family: "Caveat", cursive;
-    font-size: 1em;
-  /*  img{
-        height: 38px;
-    } */
-}
 
 .lignemenu
 {
-    font-size: 1.2em;
-    margin: 1px 10px;
+    
     li
     {
     justify-content: space-between;
@@ -295,15 +281,16 @@ h2{
     margin-top: 30px;
     }
     li .menu__nom{
+        font-size: 1em;
         font-weight: lighter;
     }
     li .menu__prix{
         font-weight: bolder;
+        font-size: 0.7em;
     }
 }
 .menu_note_enchantee
 {   
-    @extend %stylemenu;
     background-color: $note_color;
 
     .titre_plat{
@@ -312,14 +299,14 @@ h2{
     
 }
 .menu_chic{
-    @extend %stylemenu;
+   
     background-color: $chic_color;
     .titre_plat{
         @extend .titre_entree
     }
 }
 .menu_papilles{
-    @extend %stylemenu;
+ 
     background-color: $delice_color;
     .titre_plat{
     @extend .titre_entree
@@ -327,13 +314,12 @@ h2{
 
 }
 .menu_lapalette{
-    @extend %stylemenu;
+ 
     background-color: $lapalette_color;
     .titre_plat{
         @extend .titre_entree
     }
 }
-/* STYLE DES MENUS */
 
 .nomdumenubas
 {
@@ -349,14 +335,16 @@ h6
 }
 
 
-/*ANIMATIONS DES TEXTES*/
-.fa-music{background: linear-gradient(to left, #f8a183, #f15861);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        width: 52px;
-        height: 52px;
-        font-size: 50px;
-        }
+/*ANIMATIONS DES TEXTES ET ANIMATION TIREE TITRE PLATS*/
+.fa-music
+{ 
+    background: linear-gradient(to left, #f8a183, #f15861);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 52px;
+    height: 52px;
+    font-size: 50px;
+}
 
 %transitionmenu
 {
@@ -379,6 +367,80 @@ h6
     }
     
 }
+.line_lanote{
+    background: linear-gradient(to top, rgb(63, 55, 55) 0%, rgb(63, 55, 55) 0.2vw, transparent 0.2vw) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 300ms;
+    &:hover{
+        background-size: 100% 100%;  
+    }
+    font-size: 1.6em;
+
+}
+.line_lechic_1{
+    background: linear-gradient(to top, rgb(199,116,18) 0%, rgb(199,116,18) 0.2vw, transparent 0.2vw) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 300ms;
+    &:hover{
+        background-size: 100% 100%;  
+    }
+    font-size: 0.9em;
+}
+.line_lechic_2{
+    background: linear-gradient(to top, rgb(165,103,153) 0%, rgb(165,103,153) 0.2vw, transparent 0.2vw) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 300ms;
+    &:hover{
+        background-size: 100% 100%;  
+    }
+    font-size: 0.9em;
+}
+.line_lechic_3{
+    background: linear-gradient(to top, rgb(110,76,204) 0%, rgb(110,76,204) 0.2vw, transparent 0.2vw) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 300ms;
+    &:hover{
+        background-size: 100% 100%;  
+    }
+    font-size: 0.9em;
+}
+.line_papilles_1{
+    background: linear-gradient(to top, rgb(3, 40, 219) 0%, rgb(3, 40, 219) 0.2vw, transparent 0.2vw) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 300ms;
+    &:hover{
+        background-size: 100% 100%;  
+    }
+    font-size: 0.9em;
+}
+.line_papilles_2{
+    background: linear-gradient(to top, rgb(3, 113, 240) 0%, rgb(3, 113, 240) 0.2vw, transparent 0.2vw) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 300ms;
+    &:hover{
+        background-size: 100% 100%;  
+    }
+    font-size: 0.9em;
+}
+.line_papilles_3{
+    background: linear-gradient(to top, rgb(41, 155, 242) 0%, rgb(41, 155, 242) 0.2vw, transparent 0.2vw) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 300ms;
+    &:hover{
+        background-size: 100% 100%;  
+    }
+    font-size: 0.9em;  
+}
+
+.line_lapalette{
+    background: linear-gradient(to top, rgb(83, 167, 69) 0%, rgb(83, 167, 69) 0.2vw, transparent 0.2vw) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 300ms;
+    &:hover{
+        background-size: 100% 100%;  
+    }
+    font-size: 0.9em; 
+}
 
     /* Responsive */
 @media screen and (min-width: 1000px){
@@ -391,7 +453,7 @@ h6
     flex-direction: row;
     }
     .container .menu_1{
-        align-items: center;
+    align-items: center;
     }
     .container article{
     display: flex;
@@ -401,8 +463,11 @@ h6
     justify-content: center;
     }
     
+    .titre_plat h3{
+        font-size: 1.3em;
+    }
     .prochainement
-{
+    {
     display: flex;
     justify-content: center;
     width:43.5%;
@@ -412,59 +477,52 @@ h6
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
     h3{
 
-        font-size: 2em;
-        font-family:'Montserrat', sans-serif;
-        font-weight: bold;
-        color: rgb(253, 203, 70);
+    font-size: 2em;
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+    color: rgb(253, 203, 70);
     }
-}
+    }
     }
 
     /*STYLE DES MENUS*/
 
     .lignemenu{
     font-size: 1.5em;
-    margin: 5px 70px;
+    margin: 1px 10px;
     }
 
 
-%stylemenuresponsive{
-    margin: 30px auto 100px;
-    width: 100%;
-    max-width: 800px;
+%tailleimg{
+    width: 28%;
+    height: 10%;
 }
 
 .menu_note_enchantee{
-@extend %stylemenuresponsive;
-   padding-bottom: 30px;
+
 img{
-    width: 30%;
-    height: 10%;
+    @extend %tailleimg;
     }
 }
 
 .menu_chic{
-    @extend %stylemenuresponsive;
-    padding-bottom: 80px;
-    img{
-    width: 30%;
-    height: 10%;
+    
+   img{
+    @extend %tailleimg;
     }
 }
 .menu_papilles{
-    @extend %stylemenuresponsive;
-    padding-bottom: 80px;
+    
+  
     img{
-        width: 30%;
-        height: 10%;
+        @extend %tailleimg;
         }
 
 }
 .menu_lapalette{
-    @extend %stylemenuresponsive;
-    padding-bottom: 80px;
+   
+  
     img{
-        width: 30%;
-        height: 10%;
+        @extend %tailleimg; 
         }
 }

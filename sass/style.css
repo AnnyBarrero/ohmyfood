@@ -26,7 +26,7 @@ header a {
 }
 
 header a h1 {
-  font-size: 4em;
+  font-size: 3.5em;
 }
 
 /*FOOTER*/
@@ -164,6 +164,12 @@ footer {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  header h1 {
+    font-size: 4em;
+  }
+}
+
 /*variables colors menu*/
 * {
   margin: 0;
@@ -194,6 +200,16 @@ ul {
           justify-content: center;
   margin: auto 0;
   text-align: center;
+}
+
+.container_menu {
+  padding: 70px 40px;
+  margin: 30px auto 100px;
+  width: 100%;
+  max-width: 800px;
+  -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+  font-family: "Caveat", cursive;
 }
 
 /*proprietes pour les 4 menus*/
@@ -404,12 +420,12 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 70px;
 }
 
 .nomdumenu h2 {
   font-family: 'Caveat', cursive;
   font-size: 3em;
+  text-align: center;
 }
 
 .menu_chic h2 {
@@ -483,51 +499,10 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 1.5em;
-  margin: 50px 25px;
-}
-
-.titre_plat h3 {
-  background: -webkit-gradient(linear, left bottom, left top, from(#4b2138), color-stop(0.2vw, #4b2138), color-stop(0.2vw, transparent)) no-repeat;
-  background: linear-gradient(to top, #4b2138 0%, #4b2138 0.2vw, transparent 0.2vw) no-repeat;
-  background-size: 0 100%;
-  -webkit-transition: background-size 300ms;
-  transition: background-size 300ms;
-  font-size: 0.9em;
-}
-
-.titre_plat h3:hover {
-  background-size: 100% 100%;
+  margin: 50px 0;
 }
 
 /*STYLE DES MENUS*/
-.menu_note_enchantee, .menu_chic, .menu_papilles, .menu_lapalette {
-  margin: 30px 142px;
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
-  font-family: "Caveat", cursive;
-  font-size: 1em;
-  /*  img{
-        height: 38px;
-    } */
-}
-
-.lignemenu {
-  font-size: 1.2em;
-  margin: 1px 10px;
-}
-
 .lignemenu li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -540,11 +515,13 @@ ul {
 }
 
 .lignemenu li .menu__nom {
+  font-size: 1em;
   font-weight: lighter;
 }
 
 .lignemenu li .menu__prix {
   font-weight: bolder;
+  font-size: 0.7em;
 }
 
 .menu_note_enchantee {
@@ -563,7 +540,6 @@ ul {
   background-color: #f8f8f8;
 }
 
-/* STYLE DES MENUS */
 .nomdumenubas {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -579,7 +555,7 @@ h6 {
   font-size: 1.5em;
 }
 
-/*ANIMATIONS DES TEXTES*/
+/*ANIMATIONS DES TEXTES ET ANIMATION TIREE TITRE PLATS*/
 .fa-music {
   background: -webkit-gradient(linear, right top, left top, from(#f8a183), to(#f15861));
   background: linear-gradient(to left, #f8a183, #f15861);
@@ -599,6 +575,110 @@ h6 {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   opacity: 0.7;
+}
+
+.line_lanote {
+  background: -webkit-gradient(linear, left bottom, left top, from(#3f3737), color-stop(0.2vw, #3f3737), color-stop(0.2vw, transparent)) no-repeat;
+  background: linear-gradient(to top, #3f3737 0%, #3f3737 0.2vw, transparent 0.2vw) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 300ms;
+  transition: background-size 300ms;
+  font-size: 1.6em;
+}
+
+.line_lanote:hover {
+  background-size: 100% 100%;
+}
+
+.line_lechic_1 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#c77412), color-stop(0.2vw, #c77412), color-stop(0.2vw, transparent)) no-repeat;
+  background: linear-gradient(to top, #c77412 0%, #c77412 0.2vw, transparent 0.2vw) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 300ms;
+  transition: background-size 300ms;
+  font-size: 0.9em;
+}
+
+.line_lechic_1:hover {
+  background-size: 100% 100%;
+}
+
+.line_lechic_2 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#a56799), color-stop(0.2vw, #a56799), color-stop(0.2vw, transparent)) no-repeat;
+  background: linear-gradient(to top, #a56799 0%, #a56799 0.2vw, transparent 0.2vw) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 300ms;
+  transition: background-size 300ms;
+  font-size: 0.9em;
+}
+
+.line_lechic_2:hover {
+  background-size: 100% 100%;
+}
+
+.line_lechic_3 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#6e4ccc), color-stop(0.2vw, #6e4ccc), color-stop(0.2vw, transparent)) no-repeat;
+  background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 0.2vw, transparent 0.2vw) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 300ms;
+  transition: background-size 300ms;
+  font-size: 0.9em;
+}
+
+.line_lechic_3:hover {
+  background-size: 100% 100%;
+}
+
+.line_papilles_1 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#0328db), color-stop(0.2vw, #0328db), color-stop(0.2vw, transparent)) no-repeat;
+  background: linear-gradient(to top, #0328db 0%, #0328db 0.2vw, transparent 0.2vw) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 300ms;
+  transition: background-size 300ms;
+  font-size: 0.9em;
+}
+
+.line_papilles_1:hover {
+  background-size: 100% 100%;
+}
+
+.line_papilles_2 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#0371f0), color-stop(0.2vw, #0371f0), color-stop(0.2vw, transparent)) no-repeat;
+  background: linear-gradient(to top, #0371f0 0%, #0371f0 0.2vw, transparent 0.2vw) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 300ms;
+  transition: background-size 300ms;
+  font-size: 0.9em;
+}
+
+.line_papilles_2:hover {
+  background-size: 100% 100%;
+}
+
+.line_papilles_3 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#299bf2), color-stop(0.2vw, #299bf2), color-stop(0.2vw, transparent)) no-repeat;
+  background: linear-gradient(to top, #299bf2 0%, #299bf2 0.2vw, transparent 0.2vw) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 300ms;
+  transition: background-size 300ms;
+  font-size: 0.9em;
+}
+
+.line_papilles_3:hover {
+  background-size: 100% 100%;
+}
+
+.line_lapalette {
+  background: -webkit-gradient(linear, left bottom, left top, from(#53a745), color-stop(0.2vw, #53a745), color-stop(0.2vw, transparent)) no-repeat;
+  background: linear-gradient(to top, #53a745 0%, #53a745 0.2vw, transparent 0.2vw) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 300ms;
+  transition: background-size 300ms;
+  font-size: 0.9em;
+}
+
+.line_lapalette:hover {
+  background-size: 100% 100%;
 }
 
 /* Responsive */
@@ -630,6 +710,9 @@ h6 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .titre_plat h3 {
+    font-size: 1.3em;
+  }
   .prochainement {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -655,48 +738,11 @@ h6 {
 /*STYLE DES MENUS*/
 .lignemenu {
   font-size: 1.5em;
-  margin: 5px 70px;
+  margin: 1px 10px;
 }
 
-.menu_note_enchantee, .menu_chic, .menu_papilles, .menu_lapalette {
-  margin: 30px auto 100px;
-  width: 100%;
-  max-width: 800px;
-}
-
-.menu_note_enchantee {
-  padding-bottom: 30px;
-}
-
-.menu_note_enchantee img {
-  width: 30%;
-  height: 10%;
-}
-
-.menu_chic {
-  padding-bottom: 80px;
-}
-
-.menu_chic img {
-  width: 30%;
-  height: 10%;
-}
-
-.menu_papilles {
-  padding-bottom: 80px;
-}
-
-.menu_papilles img {
-  width: 30%;
-  height: 10%;
-}
-
-.menu_lapalette {
-  padding-bottom: 80px;
-}
-
-.menu_lapalette img {
-  width: 30%;
+.menu_note_enchantee img, .menu_chic img, .menu_papilles img, .menu_lapalette img {
+  width: 28%;
   height: 10%;
 }
 /*# sourceMappingURL=style.css.map */

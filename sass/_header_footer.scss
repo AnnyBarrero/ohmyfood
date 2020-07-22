@@ -21,7 +21,7 @@ header
         text-decoration: none;
 
         h1{
-            font-size: 4em;
+            font-size: 3.5em;
         }
     }
 }
@@ -77,3 +77,12 @@ footer
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
+
+
+@media screen and (min-width: 1000px){
+
+    header h1 {
+    font-size: 4em;
+}
+
+}
