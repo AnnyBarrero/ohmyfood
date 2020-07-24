@@ -209,7 +209,6 @@ ul {
   max-width: 800px;
   -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
           box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
-  font-family: "Caveat", cursive;
 }
 
 /*proprietes pour les 4 menus*/
@@ -224,7 +223,7 @@ ul {
   margin: 25px;
 }
 
-/*Proprietes pour le menu la note*/
+/*fonts pour les 4 menus, MENU PRINCIPAL*/
 .menu_1 {
   background-color: #fcdfdb;
 }
@@ -428,6 +427,10 @@ ul {
   text-align: center;
 }
 
+.menu_note_enchantee {
+  font-family: 'Caveat', cursive;
+}
+
 .menu_chic h2 {
   font-family: 'Kurale', serif;
   font-size: 2em;
@@ -458,13 +461,21 @@ ul {
 .menu_papilles h2 {
   margin-top: 20px;
   margin-bottom: 50px;
-  font-size: 1.7em;
   font-family: 'Dancing Script', cursive;
+  font-size: 1.7em;
   background: -webkit-gradient(linear, left top, right top, from(#00b7ea), to(#0060c1));
   background: linear-gradient(to right, #00b7ea 0%, #0060c1 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#0060c1',GradientType=1 );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+.menu_papilles h3 {
+  font-family: 'Caveat', cursive;
+}
+
+.menu_papilles p {
+  font-family: 'Caveat', cursive;
 }
 
 .menu_lapalette h2 {
@@ -483,6 +494,14 @@ ul {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   margin-bottom: 15px;
+}
+
+.menu_lapalette h3 {
+  font-family: 'Caveat', cursive;
+}
+
+.menu_lapalette p {
+  font-family: 'Caveat', cursive;
 }
 
 /*Section entree*/
@@ -515,13 +534,12 @@ ul {
 }
 
 .lignemenu li .menu__nom {
-  font-size: 1em;
-  font-weight: lighter;
+  font-size: 1.1em;
 }
 
 .lignemenu li .menu__prix {
   font-weight: bolder;
-  font-size: 0.7em;
+  font-size: 1.1em;
 }
 
 .menu_note_enchantee {
@@ -583,7 +601,7 @@ h6 {
   background-size: 0 100%;
   -webkit-transition: background-size 300ms;
   transition: background-size 300ms;
-  font-size: 1.6em;
+  font-size: 1.7em;
 }
 
 .line_lanote:hover {
@@ -596,7 +614,7 @@ h6 {
   background-size: 0 100%;
   -webkit-transition: background-size 300ms;
   transition: background-size 300ms;
-  font-size: 0.9em;
+  font-size: 1.3em;
 }
 
 .line_lechic_1:hover {
@@ -609,7 +627,7 @@ h6 {
   background-size: 0 100%;
   -webkit-transition: background-size 300ms;
   transition: background-size 300ms;
-  font-size: 0.9em;
+  font-size: 1.3em;
 }
 
 .line_lechic_2:hover {
@@ -622,7 +640,7 @@ h6 {
   background-size: 0 100%;
   -webkit-transition: background-size 300ms;
   transition: background-size 300ms;
-  font-size: 0.9em;
+  font-size: 1.3em;
 }
 
 .line_lechic_3:hover {
@@ -635,7 +653,7 @@ h6 {
   background-size: 0 100%;
   -webkit-transition: background-size 300ms;
   transition: background-size 300ms;
-  font-size: 0.9em;
+  font-size: 1.8em;
 }
 
 .line_papilles_1:hover {
@@ -648,7 +666,7 @@ h6 {
   background-size: 0 100%;
   -webkit-transition: background-size 300ms;
   transition: background-size 300ms;
-  font-size: 0.9em;
+  font-size: 1.8em;
 }
 
 .line_papilles_2:hover {
@@ -661,7 +679,7 @@ h6 {
   background-size: 0 100%;
   -webkit-transition: background-size 300ms;
   transition: background-size 300ms;
-  font-size: 0.9em;
+  font-size: 1.8em;
 }
 
 .line_papilles_3:hover {
@@ -674,7 +692,7 @@ h6 {
   background-size: 0 100%;
   -webkit-transition: background-size 300ms;
   transition: background-size 300ms;
-  font-size: 0.9em;
+  font-size: 1.5em;
 }
 
 .line_lapalette:hover {
@@ -710,9 +728,6 @@ h6 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .titre_plat h3 {
-    font-size: 1.3em;
-  }
   .prochainement {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -729,16 +744,35 @@ h6 {
   }
   .prochainement h3 {
     font-size: 2em;
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #fdcb46;
   }
 }
 
-/*STYLE DES MENUS*/
+/*STYLE DES MENUS RESPONSIVE*/
 .lignemenu {
-  font-size: 1.5em;
   margin: 1px 10px;
+}
+
+.lignemenu li .menu__nom {
+  font-size: 1.2em;
+}
+
+.lignemenu li .menu__prix {
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+.desserts_chic {
+  font-size: 1.2em;
+}
+
+.line_lanote {
+  font-size: 2em;
+}
+
+.menu__nom_note {
+  font-size: 1.5em;
 }
 
 .menu_note_enchantee img, .menu_chic img, .menu_papilles img, .menu_lapalette img {

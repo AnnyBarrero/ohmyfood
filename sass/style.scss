@@ -37,7 +37,6 @@ ul{
     width: 100%;
     max-width: 800px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
-    font-family: "Caveat", cursive;
 }
 /*proprietes pour les 4 menus*/
 %menu
@@ -50,7 +49,7 @@ ul{
 }    
 
 
-/*Proprietes pour le menu la note*/
+/*fonts pour les 4 menus, MENU PRINCIPAL*/
 .menu_1{
     @extend %menu;
     background-color: $note_color;
@@ -206,9 +205,13 @@ ul{
     }
     
 }
+
+.menu_note_enchantee{
+    font-family: 'Caveat', cursive;
+}
 .menu_chic {
     h2{
-        font-family: 'Kurale', serif;
+    font-family: 'Kurale', serif;
     font-size: 2em;
     background: #e38a12; /* Old browsers */
     background: -moz-linear-gradient(-45deg,  #e38a12 0%, #a768bc 51%, #b38cfa 100%); /* FF3.6-15 */
@@ -229,11 +232,13 @@ ul{
     }
 }
 
-.menu_papilles h2{
+
+.menu_papilles{
+    h2{
     margin-top: 20px;
     margin-bottom: 50px;
-    font-size: 1.7em;
     font-family: 'Dancing Script', cursive;
+    font-size: 1.7em;
     background: -moz-linear-gradient(left,  #00b7ea 0%, #0060c1 100%);
     background: -webkit-linear-gradient(left,  #00b7ea 0%,#0060c1 100%);
     background: linear-gradient(to right,  #00b7ea 0%,#0060c1 100%);
@@ -241,8 +246,15 @@ ul{
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
-
-.menu_lapalette h2{
+h3{
+    font-family: 'Caveat', cursive; 
+}  
+p{
+    font-family: 'Caveat', cursive;
+}
+}
+.menu_lapalette{
+ h2{
     font-size: 2em;
     font-family: 'Kaushan Script', cursive;
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#43973d+0,beff7f+100 */
@@ -255,6 +267,13 @@ ul{
         -webkit-background-clip:text;
     margin-bottom: 15px;
 
+}
+h3{
+    font-family: 'Caveat', cursive; 
+}  
+p{
+    font-family: 'Caveat', cursive;
+}
 }
 /*Section entree*/
 
@@ -281,12 +300,11 @@ ul{
     margin-top: 30px;
     }
     li .menu__nom{
-        font-size: 1em;
-        font-weight: lighter;
+        font-size: 1.1em;
     }
     li .menu__prix{
         font-weight: bolder;
-        font-size: 0.7em;
+        font-size: 1.1em;
     }
 }
 .menu_note_enchantee
@@ -374,7 +392,7 @@ h6
     &:hover{
         background-size: 100% 100%;  
     }
-    font-size: 1.6em;
+    font-size: 1.7em;
 
 }
 .line_lechic_1{
@@ -384,7 +402,7 @@ h6
     &:hover{
         background-size: 100% 100%;  
     }
-    font-size: 0.9em;
+    font-size: 1.3em;
 }
 .line_lechic_2{
     background: linear-gradient(to top, rgb(165,103,153) 0%, rgb(165,103,153) 0.2vw, transparent 0.2vw) no-repeat;
@@ -393,7 +411,7 @@ h6
     &:hover{
         background-size: 100% 100%;  
     }
-    font-size: 0.9em;
+    font-size: 1.3em;
 }
 .line_lechic_3{
     background: linear-gradient(to top, rgb(110,76,204) 0%, rgb(110,76,204) 0.2vw, transparent 0.2vw) no-repeat;
@@ -402,7 +420,7 @@ h6
     &:hover{
         background-size: 100% 100%;  
     }
-    font-size: 0.9em;
+    font-size: 1.3em;
 }
 .line_papilles_1{
     background: linear-gradient(to top, rgb(3, 40, 219) 0%, rgb(3, 40, 219) 0.2vw, transparent 0.2vw) no-repeat;
@@ -411,7 +429,7 @@ h6
     &:hover{
         background-size: 100% 100%;  
     }
-    font-size: 0.9em;
+    font-size: 1.8em;
 }
 .line_papilles_2{
     background: linear-gradient(to top, rgb(3, 113, 240) 0%, rgb(3, 113, 240) 0.2vw, transparent 0.2vw) no-repeat;
@@ -420,7 +438,7 @@ h6
     &:hover{
         background-size: 100% 100%;  
     }
-    font-size: 0.9em;
+    font-size: 1.8em;
 }
 .line_papilles_3{
     background: linear-gradient(to top, rgb(41, 155, 242) 0%, rgb(41, 155, 242) 0.2vw, transparent 0.2vw) no-repeat;
@@ -429,7 +447,7 @@ h6
     &:hover{
         background-size: 100% 100%;  
     }
-    font-size: 0.9em;  
+    font-size: 1.8em;  
 }
 
 .line_lapalette{
@@ -439,7 +457,7 @@ h6
     &:hover{
         background-size: 100% 100%;  
     }
-    font-size: 0.9em; 
+    font-size: 1.5em; 
 }
 
     /* Responsive */
@@ -463,9 +481,7 @@ h6
     justify-content: center;
     }
     
-    .titre_plat h3{
-        font-size: 1.3em;
-    }
+    
     .prochainement
     {
     display: flex;
@@ -475,23 +491,35 @@ h6
     background-color: rgb(87, 156, 135);
     border-radius: 30px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    
     h3{
-
     font-size: 2em;
-    font-family:'Montserrat', sans-serif;
     font-weight: bold;
     color: rgb(253, 203, 70);
     }
     }
     }
 
-    /*STYLE DES MENUS*/
-
+    /*STYLE DES MENUS RESPONSIVE*/
     .lignemenu{
-    font-size: 1.5em;
     margin: 1px 10px;
     }
-
+    .lignemenu li .menu__nom {
+    font-size: 1.2em;
+    }
+    .lignemenu li .menu__prix{
+        font-weight: bolder;
+        font-size: 1.2em;
+    }
+    .desserts_chic{
+        font-size: 1.2em;
+    }
+    .line_lanote {
+        font-size: 2em;
+        }
+    .menu__nom_note{
+        font-size: 1.5em;
+        }
 
 %tailleimg{
     width: 28%;
