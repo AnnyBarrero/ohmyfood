@@ -197,7 +197,6 @@ ul{
 {
     display: flex;
     flex-direction: column;
-    align-items: center;
     h2{
         font-family: 'Caveat', cursive;
         font-size: 3em;
@@ -205,10 +204,46 @@ ul{
     }
     
 }
+%tailleimg{
+    width: 28%;
+    height: 10%;
+}
 
+.menu_note_enchantee{
+
+img{
+    @extend %tailleimg;
+    }
+}
+
+.menu_chic{
+    
+   img{
+    @extend %tailleimg;
+    }
+}
+.menu_papilles{
+    
+  
+    img{
+        @extend %tailleimg;
+        }
+
+}
+.menu_lapalette{
+   
+  
+    img{
+        @extend %tailleimg; 
+        }
+}
 .menu_note_enchantee{
     font-family: 'Caveat', cursive;
 }
+.menu_note_enchantee .nomdumenu{
+    align-items: center;
+}
+
 .menu_chic {
     h2{
     font-family: 'Kurale', serif;
@@ -239,9 +274,9 @@ ul{
     margin-bottom: 50px;
     font-family: 'Dancing Script', cursive;
     font-size: 1.7em;
-    background: -moz-linear-gradient(left,  #00b7ea 0%, #0060c1 100%);
-    background: -webkit-linear-gradient(left,  #00b7ea 0%,#0060c1 100%);
-    background: linear-gradient(to right,  #00b7ea 0%,#0060c1 100%);
+    background: -moz-linear-gradient(left, #0060c1  0%, #00b7ea 100%);
+    background: -webkit-linear-gradient(left, #0060c1 0%, #00b7ea 100%);
+    background: linear-gradient(to right, #0060c1 0%, #00b7ea 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#0060c1',GradientType=1 );
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -283,7 +318,8 @@ p{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-     margin: 50px 0;
+    margin: 50px 0;
+    align-items: center;
 }
 
 
@@ -484,13 +520,8 @@ h6
     
     .prochainement
     {
-    display: flex;
-    justify-content: center;
     width:43.5%;
     margin: 6px auto 110px auto;
-    background-color: rgb(87, 156, 135);
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
     
     h3{
     font-size: 2em;
@@ -498,59 +529,48 @@ h6
     color: rgb(253, 203, 70);
     }
     }
-    }
-
+    
     /*STYLE DES MENUS RESPONSIVE*/
     .lignemenu{
-    margin: 1px 10px;
-    }
-    .lignemenu li .menu__nom {
-    font-size: 1.2em;
-    }
-    .lignemenu li .menu__prix{
-        font-weight: bolder;
-        font-size: 1.2em;
+    margin: 0px 40px;
     }
     .desserts_chic{
         font-size: 1.2em;
     }
+    .menu_note_enchantee .lignemenu{
+        margin: 0px 10px;
+    }
+    %font_menu
+    {
+    font-size: 1.5em;
+    }
+    .menu_note_enchantee .lignemenu li .menu__nom {
+        @extend
+            %font_menu;
+        }
+    .menu_note_enchantee .lignemenu li .menu__prix {
+        @extend
+        %font_menu;
+        } 
+    .menu_papilles .lignemenu li .menu__nom {
+        @extend
+            %font_menu;
+        }
+    .menu_papilles .lignemenu li .menu__prix {
+        @extend
+        %font_menu;
+        }
+    .menu_lapalette .lignemenu li .menu__nom {
+        @extend
+        %font_menu; 
+    }
+    .menu_lapalette .lignemenu li .menu__prix{
+        @extend
+        %font_menu;
+    }
+
     .line_lanote {
         font-size: 2em;
-        }
-    .menu__nom_note{
-        font-size: 1.5em;
-        }
-
-%tailleimg{
-    width: 28%;
-    height: 10%;
-}
-
-.menu_note_enchantee{
-
-img{
-    @extend %tailleimg;
-    }
-}
-
-.menu_chic{
+        } 
     
-   img{
-    @extend %tailleimg;
     }
-}
-.menu_papilles{
-    
-  
-    img{
-        @extend %tailleimg;
-        }
-
-}
-.menu_lapalette{
-   
-  
-    img{
-        @extend %tailleimg; 
-        }
-}

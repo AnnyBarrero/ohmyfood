@@ -12,7 +12,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 150px;
+  height: 100px;
   font-family: 'Montserrat', sans-serif;
   color: #fdcb46;
   background-color: #579c87;
@@ -165,7 +165,10 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
-  header h1 {
+  header {
+    height: 150px;
+  }
+  header a h1 {
     font-size: 4em;
   }
 }
@@ -416,9 +419,6 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .nomdumenu h2 {
@@ -427,8 +427,19 @@ ul {
   text-align: center;
 }
 
+.menu_note_enchantee img, .menu_chic img, .menu_papilles img, .menu_lapalette img {
+  width: 28%;
+  height: 10%;
+}
+
 .menu_note_enchantee {
   font-family: 'Caveat', cursive;
+}
+
+.menu_note_enchantee .nomdumenu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu_chic h2 {
@@ -463,8 +474,8 @@ ul {
   margin-bottom: 50px;
   font-family: 'Dancing Script', cursive;
   font-size: 1.7em;
-  background: -webkit-gradient(linear, left top, right top, from(#00b7ea), to(#0060c1));
-  background: linear-gradient(to right, #00b7ea 0%, #0060c1 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#0060c1), to(#00b7ea));
+  background: linear-gradient(to right, #0060c1 0%, #00b7ea 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#0060c1',GradientType=1 );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -519,6 +530,9 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 50px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*STYLE DES MENUS*/
@@ -729,54 +743,29 @@ h6 {
             justify-content: center;
   }
   .prochainement {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 43.5%;
     margin: 6px auto 110px auto;
-    background-color: #579c87;
-    border-radius: 30px;
-    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
   .prochainement h3 {
     font-size: 2em;
     font-weight: bold;
     color: #fdcb46;
   }
-}
-
-/*STYLE DES MENUS RESPONSIVE*/
-.lignemenu {
-  margin: 1px 10px;
-}
-
-.lignemenu li .menu__nom {
-  font-size: 1.2em;
-}
-
-.lignemenu li .menu__prix {
-  font-weight: bolder;
-  font-size: 1.2em;
-}
-
-.desserts_chic {
-  font-size: 1.2em;
-}
-
-.line_lanote {
-  font-size: 2em;
-}
-
-.menu__nom_note {
-  font-size: 1.5em;
-}
-
-.menu_note_enchantee img, .menu_chic img, .menu_papilles img, .menu_lapalette img {
-  width: 28%;
-  height: 10%;
+  /*STYLE DES MENUS RESPONSIVE*/
+  .lignemenu {
+    margin: 0px 40px;
+  }
+  .desserts_chic {
+    font-size: 1.2em;
+  }
+  .menu_note_enchantee .lignemenu {
+    margin: 0px 10px;
+  }
+  .menu_note_enchantee .lignemenu li .menu__nom, .menu_note_enchantee .lignemenu li .menu__prix, .menu_papilles .lignemenu li .menu__nom, .menu_papilles .lignemenu li .menu__prix, .menu_lapalette .lignemenu li .menu__nom, .menu_lapalette .lignemenu li .menu__prix {
+    font-size: 1.5em;
+  }
+  .line_lanote {
+    font-size: 2em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
