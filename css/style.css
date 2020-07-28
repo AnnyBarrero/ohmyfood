@@ -17,7 +17,7 @@ header a {
   text-decoration: none;
 }
 header a h1 {
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
 /*FOOTER*/
@@ -87,7 +87,7 @@ footer {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 972px) {
   header {
     height: 150px;
   }
@@ -135,26 +135,7 @@ ul {
   margin: 25px;
 }
 
-/*fonts pour les 4 menus, MENU PRINCIPAL*/
-.menu_1 {
-  background-color: #fcdfdb;
-}
-.menu_1 h2 {
-  font-family: "debonshire", cursive;
-  font-size: 1.5em;
-  color: #3f3737;
-  font-weight: bold;
-}
-.menu_1 p {
-  font-family: "Itim", cursive;
-  color: #3f3737;
-  font-size: 2em;
-}
-
-.menu_2 {
-  background-color: #fff5fe;
-}
-.menu_2 h2 {
+.menu_chic h2, .menu_2 h2 {
   font-family: "Kurale", serif;
   font-size: 2em;
   background: #e38a12;
@@ -169,18 +150,9 @@ ul {
   /* IE6-9 fallback on horizontal gradient */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  margin-top: 15%;
-}
-.menu_2 p {
-  font-family: "DM Serif Text", serif;
-  font-size: 3em;
-  color: #c77412;
 }
 
-.menu_3 {
-  background-color: #f2efef;
-}
-.menu_3 h2 {
+.menu_papilles h2, .menu_3 h2 {
   font-size: 2em;
   font-family: "Dancing Script", cursive;
   background: -moz-linear-gradient(left, #00b7ea 0%, #0060c1 100%);
@@ -189,19 +161,9 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00b7ea", endColorstr="#0060c1",GradientType=1 );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  margin-top: 15%;
-}
-.menu_3 p {
-  font-size: 3em;
-  font-family: "Nanum Pen Script", cursive;
-  font-style: italic;
-  color: #0887fb;
 }
 
-.menu_4 {
-  background-color: #fdfdfd;
-}
-.menu_4 h2 {
+.menu_lapalette h2, .menu_4 h2 {
   font-size: 2em;
   font-family: "Kaushan Script", cursive;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#43973d+0,beff7f+100 */
@@ -217,6 +179,53 @@ ul {
   /* IE6-9 */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+/*fonts pour les 4 menus, MENU PRINCIPAL*/
+.menu_1 {
+  background-color: #fcdfdb;
+}
+.menu_1 h2 {
+  font-family: "Caveat", cursive;
+  font-size: 1.5em;
+  color: #3f3737;
+}
+.menu_1 p {
+  font-family: "Itim", cursive;
+  color: #3f3737;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.menu_2 {
+  background-color: #fff5fe;
+}
+.menu_2 h2 {
+  margin-top: 15%;
+}
+.menu_2 p {
+  font-family: "DM Serif Text", serif;
+  font-size: 2em;
+  color: #c77412;
+}
+
+.menu_3 {
+  background-color: #f2efef;
+}
+.menu_3 h2 {
+  margin-top: 15%;
+}
+.menu_3 p {
+  font-size: 3em;
+  font-family: "Nanum Pen Script", cursive;
+  font-style: italic;
+  color: #0887fb;
+}
+
+.menu_4 {
+  background-color: #fdfdfd;
+}
+.menu_4 h2 {
   margin-top: 15%;
 }
 .menu_4 p {
@@ -284,8 +293,6 @@ ul {
   flex-direction: column;
 }
 .nomdumenu h2 {
-  font-family: "Caveat", cursive;
-  font-size: 3em;
   text-align: center;
 }
 
@@ -303,20 +310,7 @@ ul {
 }
 
 .menu_chic h2 {
-  font-family: "Kurale", serif;
-  font-size: 2em;
-  background: #e38a12;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #e38a12 0%, #a768bc 51%, #b38cfa 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #e38a12 0%, #a768bc 51%, #b38cfa 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #e38a12 0%, #a768bc 51%, #b38cfa 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e38a12", endColorstr="#b38cfa",GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  font-size: 1.7em;
 }
 .menu_chic .color_entree {
   color: #c67412;
@@ -328,47 +322,14 @@ ul {
   color: #6e4ccc;
 }
 
-.menu_papilles h2 {
-  margin-top: 20px;
-  margin-bottom: 50px;
-  font-family: "Dancing Script", cursive;
-  font-size: 1.7em;
-  background: -moz-linear-gradient(left, #0060c1 0%, #00b7ea 100%);
-  background: -webkit-linear-gradient(left, #0060c1 0%, #00b7ea 100%);
-  background: linear-gradient(to right, #0060c1 0%, #00b7ea 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00b7ea", endColorstr="#0060c1",GradientType=1 );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-.menu_papilles h3 {
-  font-family: "Caveat", cursive;
-}
-.menu_papilles p {
+.menu_papilles h3, .menu_papilles p {
   font-family: "Caveat", cursive;
 }
 
 .menu_lapalette h2 {
-  font-size: 2em;
-  font-family: "Kaushan Script", cursive;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#43973d+0,beff7f+100 */
-  background: #43973d;
-  /* Old browsers */
-  background: -moz-linear-gradient(left, #43973d 0%, #beff7f 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #43973d 0%, #beff7f 100%);
-  /*  Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #43973d 0%, #beff7f 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#43973d", endColorstr="#beff7f",GradientType=1 );
-  /* IE6-9 */
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
   margin-bottom: 15px;
 }
-.menu_lapalette h3 {
-  font-family: "Caveat", cursive;
-}
-.menu_lapalette p {
+.menu_lapalette h3, .menu_lapalette p {
   font-family: "Caveat", cursive;
 }
 
@@ -517,12 +478,11 @@ h6 {
   background-size: 100% 100%;
 }
 
-/* Responsive */
-@media screen and (min-width: 1000px) {
+/* Responsive Tablet*/
+@media screen and (min-width: 576px) {
   .container {
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     flex-direction: row;
   }
@@ -533,10 +493,31 @@ h6 {
 
   .container article {
     display: flex;
-    height: 550px;
-    width: 400px;
+    height: 320px;
+    width: 200px;
     margin: 25px;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 720px) {
+  .container article {
+    height: 350px;
+    width: 300px;
+  }
+}
+/* Responsive Desktop*/
+@media screen and (min-width: 972px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .container article {
+    height: 550px;
+    width: 400px;
+  }
+
+  .menu_1 h2 {
+    font-size: 2em;
   }
 
   .prochainement {
@@ -562,10 +543,17 @@ h6 {
     margin: 0px 10px;
   }
 
-  .menu_lapalette .lignemenu li .menu__prix, .menu_lapalette .lignemenu li .menu__nom, .menu_papilles .lignemenu li .menu__prix, .menu_papilles .lignemenu li .menu__nom, .menu_note_enchantee .lignemenu li .menu__prix, .menu_note_enchantee .lignemenu li .menu__nom {
+  /*FONTSIZE POUR LES 3 MENUS: LA NOTE, PAPILLES ET LA PALETTE*/
+  .menu_note_enchantee .lignemenu li .menu__nom,
+.menu_note_enchantee .lignemenu li .menu__prix,
+.menu_papilles .lignemenu li .menu__nom,
+.menu_papilles .lignemenu li .menu__prix,
+.menu_lapalette .lignemenu li .menu__nom,
+.menu_lapalette .lignemenu li .menu__prix {
     font-size: 1.5em;
   }
 
+  /*STYLE DES MENUS RESPONSIVE*/
   .line_lanote {
     font-size: 2em;
   }
