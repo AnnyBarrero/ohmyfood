@@ -173,7 +173,7 @@ footer {
   }
 }
 
-/*variables colors menu*/
+/*VARIABLES COULEURS MENUS*/
 * {
   margin: 0;
   padding: 0;
@@ -189,7 +189,10 @@ ul {
   list-style: none;
 }
 
-/*tous les menus: menus-prev*/
+/******************/
+/*STRUCTURE DU SITE*/
+/******************/
+/*ACCUEIL*/
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -214,7 +217,10 @@ ul {
           box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
 }
 
-/*proprietes pour les 4 menus*/
+/******************/
+/*PROPRIETES POUR LES 4 MENUS*/
+/******************/
+/*MENUS ACCUEIL*/
 .menu_1, .menu_2, .menu_3, .menu_4 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -329,7 +335,7 @@ ul {
   color: #72bf56;
 }
 
-/*PROCHAINEMENT*/
+/******PROCHAINEMENT******/
 .prochainement {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,7 +359,7 @@ ul {
   color: #fdcb46;
 }
 
-/* ANIMATION DES POINTS*/
+/***** ANIMATION DES POINTS*******/
 .points {
   display: -webkit-box;
   display: -ms-flexbox;

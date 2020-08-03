@@ -95,7 +95,7 @@ footer {
     font-size: 4em;
   }
 }
-/*variables colors menu*/
+/*VARIABLES COULEURS MENUS*/
 * {
   margin: 0;
   padding: 0;
@@ -110,7 +110,10 @@ ul {
   list-style: none;
 }
 
-/*tous les menus: menus-prev*/
+/******************/
+/*STRUCTURE DU SITE*/
+/******************/
+/*ACCUEIL*/
 .container {
   display: flex;
   flex-direction: column;
@@ -127,7 +130,10 @@ ul {
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
 }
 
-/*proprietes pour les 4 menus*/
+/******************/
+/*PROPRIETES POUR LES 4 MENUS*/
+/******************/
+/*MENUS ACCUEIL*/
 .menu_4, .menu_3, .menu_2, .menu_1 {
   flex-direction: column;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
@@ -234,7 +240,7 @@ ul {
   color: #72bf56;
 }
 
-/*PROCHAINEMENT*/
+/******PROCHAINEMENT******/
 .prochainement {
   display: flex;
   justify-content: center;
@@ -252,7 +258,7 @@ ul {
   color: #fdcb46;
 }
 
-/* ANIMATION DES POINTS*/
+/***** ANIMATION DES POINTS*******/
 .points {
   display: flex;
   flex-direction: row;

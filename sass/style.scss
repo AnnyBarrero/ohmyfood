@@ -1,6 +1,6 @@
 @import "_header_footer";
 
-/*variables colors menu*/
+/*VARIABLES COULEURS MENUS*/
 $note_color:rgb(252,223,219);
 $chic_color:rgb(255, 245, 254);
 $delice_color: rgb(242, 239, 239);
@@ -21,7 +21,11 @@ ul{
 
 
 
-/*tous les menus: menus-prev*/
+/******************/
+/*STRUCTURE DU SITE*/
+/******************/
+
+/*ACCUEIL*/
 .container
 {
     display: flex;
@@ -38,7 +42,12 @@ ul{
     max-width: 800px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
 }
-/*proprietes pour les 4 menus*/
+
+/******************/
+/*PROPRIETES POUR LES 4 MENUS*/
+/******************/
+
+/*MENUS ACCUEIL*/
 %menu
 {
     flex-direction: column;
@@ -104,43 +113,44 @@ ul{
     @extend %menu;
     background-color: $chic_color;
     h2{
-        @extend %menu_chic_gradient;
-        margin-top: 15%;
+    @extend %menu_chic_gradient;
+    margin-top: 15%;
     }
     p{  
-        font-family: 'DM Serif Text', serif;
-        font-size: 2em;
-        color: rgb(199,116,18); 
+    font-family: 'DM Serif Text', serif;
+    font-size: 2em;
+    color: rgb(199,116,18); 
     }
 }
 .menu_3{
     @extend %menu;
     background-color: $delice_color;
     h2{
-        @extend %menu_papilles_gradient;
-        margin-top: 15%;
+    @extend %menu_papilles_gradient;
+    margin-top: 15%;
     }
     p{
-        font-size: 3em;
-        font-family: 'Nanum Pen Script', cursive;
-        font-style: italic;
-        color: rgb(8,135,251);
+    font-size: 3em;
+    font-family: 'Nanum Pen Script', cursive;
+    font-style: italic;
+    color: rgb(8,135,251);
     }
 }
 .menu_4{
     @extend %menu;
     background-color: rgb(253, 253, 253);
     h2{
-        @extend %menu_palette_gradient;
-        margin-top: 15%;
+    @extend %menu_palette_gradient;
+    margin-top: 15%;
     }
     p{
-        font-size: 3em;
-        font-family: 'Nanum Pen Script', cursive;
-        color: rgb(114,191,86);
+    font-size: 3em;
+    font-family: 'Nanum Pen Script', cursive;
+    color: rgb(114,191,86);
     }
 }
-/*PROCHAINEMENT*/
+
+/******PROCHAINEMENT******/
 
 .prochainement
 {
@@ -153,14 +163,13 @@ ul{
     border-radius: 30px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
     h3{
-
-        font-size: 1.5em;
-        font-family:'Montserrat', sans-serif;
-        font-weight: bold;
-        color: rgb(253, 203, 70);
+    font-size: 1.5em;
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+    color: rgb(253, 203, 70);
     }
 }
-/* ANIMATION DES POINTS*/
+/***** ANIMATION DES POINTS*******/
 
 .points
 {
@@ -169,34 +178,34 @@ ul{
     align-items: flex-end;
     margin-left: 1%;
     .point{
-        margin: 0.7vw;
-        width: 1.2vw;
-        height: 1.2vw;
-        border-radius: 50%;
-        background: rgb(253, 203, 70);
-        &:nth-child(1){
-            animation:pulse 3s linear infinite;   
-        }
-        &:nth-child(2){
-            animation:pulse 3s linear infinite 200ms;   
-        }
-        &:nth-child(3){
-            animation:pulse 3s linear infinite 400ms;   
-        }
+    margin: 0.7vw;
+    width: 1.2vw;
+    height: 1.2vw;
+    border-radius: 50%;
+    background: rgb(253, 203, 70);
+    &:nth-child(1){
+    animation:pulse 3s linear infinite;   
+    }
+    &:nth-child(2){
+    animation:pulse 3s linear infinite 200ms;   
+    }
+    &:nth-child(3){
+    animation:pulse 3s linear infinite 400ms;   
+    }
     }
 }
 @keyframes pulse {
     from, 
     40% {
-        opacity: 0; 
+    opacity: 0; 
     }
     50%
     {
-        opacity: 0.5;
+    opacity: 0.5;
     }
     80%,
     to {
-        opacity: 1;
+    opacity: 1;
     }
 }
 
@@ -208,7 +217,7 @@ ul{
     display: flex;
     flex-direction: column;
     h2{
-        text-align: center;
+    text-align: center;
     }
     
 }
@@ -234,16 +243,14 @@ img{
     
   
     img{
-        @extend %tailleimg;
-        }
+    @extend %tailleimg;
+    }
 
 }
 .menu_lapalette{
-   
-  
-    img{
-        @extend %tailleimg; 
-        }
+   img{
+    @extend %tailleimg; 
+    }
 }
 .menu_note_enchantee{
     font-family: 'Caveat', cursive;
@@ -304,7 +311,6 @@ h3 , p{
 
 .lignemenu
 {
-    
     li
     {
     justify-content: space-between;
@@ -313,31 +319,28 @@ h3 , p{
     margin-top: 30px;
     }
     li .menu__nom{
-        font-size: 1.1em;
+    font-size: 1.1em;
     }
     li .menu__prix{
-        font-weight: bolder;
-        font-size: 1.1em;
+    font-weight: bolder;
+    font-size: 1.1em;
     }
 }
 .menu_note_enchantee
 {   
     background-color: $note_color;
-
     .titre_plat{
     @extend .titre_entree
         }
     
 }
 .menu_chic{
-   
     background-color: $chic_color;
     .titre_plat{
-        @extend .titre_entree
+    @extend .titre_entree
     }
 }
 .menu_papilles{
- 
     background-color: $delice_color;
     .titre_plat{
     @extend .titre_entree
@@ -345,10 +348,9 @@ h3 , p{
 
 }
 .menu_lapalette{
- 
     background-color: $lapalette_color;
     .titre_plat{
-        @extend .titre_entree
+    @extend .titre_entree
     }
 }
 
@@ -386,15 +388,14 @@ h6
 }
 .menu
 {
-    
     &:hover .fa-music {
-        @extend %transitionmenu;   
+    @extend %transitionmenu;   
     }
     &:hover h2{
-        @extend %transitionmenu;
+    @extend %transitionmenu;
     }
     &:hover p{
-        @extend %transitionmenu;
+    @extend %transitionmenu;
     }
     
 }
@@ -403,7 +404,7 @@ h6
     background-size: 0 100%;
     transition: background-size 300ms;
     &:hover{
-        background-size: 100% 100%;  
+    background-size: 100% 100%;  
     }
     font-size: 1.7em;
 
