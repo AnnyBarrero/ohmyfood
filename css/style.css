@@ -478,6 +478,36 @@ h6 {
   background-size: 100% 100%;
 }
 
+/******************/
+/*MENTIONS LEGALES*/
+/******************/
+/*MENTIONS LEGALES*/
+.pagementionslegales {
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+.pagementionslegales h5 {
+  font-size: 25px;
+  color: #579c87;
+}
+.pagementionslegales h6 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.pagementionslegales p {
+  font-size: 17px;
+}
+.pagementionslegales em {
+  font-size: 15px;
+  font-weight: bold;
+}
+.pagementionslegales a {
+  color: black;
+}
+
+/******************/
+/*RESPONSIVE*/
+/******************/
 /* Responsive Tablet*/
 @media screen and (min-width: 576px) {
   .container {

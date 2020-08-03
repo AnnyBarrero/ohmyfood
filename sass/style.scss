@@ -473,23 +473,57 @@ h6
     font-size: 1.5em; 
 }
 
+ /******************/
+/*MENTIONS LEGALES*/
+/******************/
+
+/*MENTIONS LEGALES*/
+
+.pagementionslegales
+{
+    margin: 0 auto;
+    font-family:'Montserrat', sans-serif;
+    h5{
+        font-size: 25px;
+        color: $clrbck;
+    }
+    h6{
+        font-size: 18px;
+        font-weight: 500; 
+    }
+    p{
+        font-size: 17px;
+    }
+    em{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    a{
+        color: black;
+    }
+}
+
+/******************/
+/*RESPONSIVE*/
+/******************/
 /* Responsive Tablet*/
 @media screen and (min-width: 576px){
-.container{
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0 auto;
-    flex-direction: row;
+
+    .container{
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: row;
     }
     .container .menu_1{
-    align-items: center;
+        align-items: center;
     }
     .container article{
-    display: flex;
-    height: 320px;
-    width: 200px;
-    margin: 25px;
-    justify-content: center;
+        display: flex;
+        height: 320px;
+        width: 200px;
+        margin: 25px;
+        justify-content: center;
     }
 }
 @media screen and (min-width: 720px){
